@@ -1,0 +1,538 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px 40px 0;
+}
+
+.mm-line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #727272;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #39aae1;
+    color: #FFF;
+}
+
+/* BANNER */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/img1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#banner #title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title h1,
+#title h2 {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    max-width: 350px;
+    text-shadow: 0px 1px #000;
+}
+
+#title h1 {
+    font-size: 65px;
+    margin-bottom: 25px;
+}
+
+#title h2 {
+    font-size: 20px;
+}
+
+#banner #options {
+    height: 210px;
+    display: flex;
+}
+
+.option-card {
+    flex: 1;
+    padding: 20px;
+    color: #FFF;
+}
+
+#card-1 {
+    background-color: #39aae1;
+}
+
+#card-2 {
+    background-color: #0079c7;
+}
+
+#card-3 {
+    background-color: #2b4c99;
+}
+
+.card-header {
+    font-size: 22px;
+}
+
+.card-body {
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.card-button {
+    display: inline-block;
+    border: 1px solid #FFF;
+    padding: 5px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.card-button:hover {
+    color: #39aae1;
+    border: #39aae1;
+    background-color: #FFF;
+    transition: linear 0.2s;
+}
+
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #39aae1;
+    padding: 12px 0;
+}
+
+/* CONTENT */
+
+section#general {
+    display: flex;
+    justify-content: center;
+}
+
+section#posts {
+    flex: 2;
+}
+
+aside#extras {
+    flex: 1;
+}
+
+.section-title h4 {
+    margin-bottom: 10px;
+}
+
+.section-title .title-bar {
+    height: 3px;
+    width: 50px;
+    background-color: #39aae1;
+    margin-bottom: 15px;
+}
+
+#departments {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.department-button {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: #39aae1;
+    margin: 7px;
+}
+
+#appointment-description {
+    font-size: 13px;
+    border-bottom: 1px solid #39aae1;
+    padding-bottom: 15px;
+}
+
+.contacts {
+    border-bottom: 1px solid #39aae1;
+    font-size: 15px;
+    padding: 15px 0;
+}
+
+#post-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin: 0 15px 10px 0;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .post-info {
+    display: flex;
+    margin-top: 10px;
+}
+
+article .posted-at {
+    background-color: #2b4c99;
+    font-size: 14px;
+    color: #FFF;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .posted-at::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 10px solid;
+    margin-top: 25px;
+    border-color: #2b4c99 transparent transparent transparent;
+}
+
+article .post-comments {
+    background-color: #39aae1;
+    font-size: 14px;
+    color: #FFF;
+    padding: 10px;
+}
+
+article .post-thumbnail img {
+    width: 100%;
+    height: auto;
+    margin: 25px 0 15px 0;
+}
+
+article .post-title h3 {
+    margin: 0;
+    padding: 0;
+    color: #5c5c5c;
+}
+
+article .post-description p {
+    font-size: 13px;
+    color: #5c5c5c;
+    line-height: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+}
+
+footer #footer-buttons {
+    display: flex;
+    color: #FFF;
+}
+
+footer #footer-buttons a {
+    flex: 1;
+}
+
+#footer-btn-1,
+#footer-btn-2,
+#footer-btn-3 {
+    padding: 20px;
+}
+
+#footer-btn-1 {
+    background-color: #39aae1;
+}
+
+#footer-btn-2 {
+    background-color: #0079c7;
+}
+
+#footer-btn-3 {
+    background-color: #2b4c99;
+}
+
+#footer-btn-1:hover,
+#footer-btn-2:hover {
+    background-color: #2b4c99;
+    transition: linear 0.3s;
+}
+
+#footer-buttons h3 {
+    margin-top: 0;
+}
+
+#footer-buttons p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+#footer-buttons a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#footer-area {
+    display: flex;
+}
+
+.footer-area-item {
+    color: #FFF;
+    flex: 1;
+}
+
+.area-item-content {
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.area-item-content a {
+    color: #FFF;
+}
+
+footer #contato {
+    margin-top: 30px;
+}
+
+footer #contato p,
+footer .contato-info a{
+    margin: 3px 0;
+    text-decoration: none;
+}
+
+footer .contato-info {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+footer .area-item-list {
+    list-style-type: "→  ";
+    margin: 0;
+    padding: 0 10px 0 20px;
+    font-size: 12px;
+}
+
+footer .area-item-list li {
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+footer .area-item-list a {
+    color: #FFF;
+    text-decoration: none;
+}
+footer .area-item-list p {
+    color: #5e5e5e;
+    margin: 0;
+}
+
+footer .area-item-list span {
+    color: #0079c7;
+    display: block;
+    margin-top: 3px;
+}
+
+#footer-copy {
+    border-top: 2px solid #2c2c2c;
+    margin-top: 30px;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 940px) and (max-width: 1000px) {
+    header #logo {
+        margin-left: 20px;
+    }
+
+    #banner #title {
+        margin-left: 20px;
+    }
+
+    section#general {
+        padding: 0 10px;
+    }
+
+    article {
+        min-width: 250px;
+    }
+    
+    #departments .department-button {
+        width: 139px;
+        height: 139px;
+    }
+
+    footer .footer-area-item {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 939px) {
+    .container {
+        flex-direction: column;
+    }
+
+    header #logo {
+        margin-left: 20px;
+    }
+    
+    header {
+        height: auto;
+    }
+
+    #menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #menu ul{
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        text-align: right;
+        width: 100%;
+        background-color: #FFF;
+    }
+
+    #banner {
+        min-height: 500px;
+        height: auto;
+    }
+
+    #banner #title {
+        margin-left: 20px;
+        padding: 60px 20px;
+    }
+
+    #banner #title h1 {
+        font-size: 55px;
+    }
+
+    #banner #title h2 {
+        font-size: 17px;
+    }
+
+    #banner #options {
+        flex-direction: column;
+        height: auto;
+    }
+
+    section#general {
+        padding: 0 10px;
+    }
+
+    article {
+        padding: 0 5px;
+        margin-right: 0;
+    }
+
+    #departments .department-button {
+        width: 141px;
+        height: 141px;
+    }
+
+    footer {
+        margin-top: 5px;
+    }
+
+    #footer-buttons,
+    #footer-area {
+        flex-direction: column;
+    }
+
+    footer .footer-area-item {
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+
+    footer #footer-copy {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 350px) {
+    #banner #title h1 {
+        font-size: 45px;
+    }
+
+    #banner #title {
+        margin-left: 10px;
+        padding: 60px 20px;
+    }
+}
+
+/* HELPERS */
+
+.flex-column {
+    flex-direction: column;
+}
